@@ -1,14 +1,14 @@
-{
-  "compilerOptions": {
-    "allowJs": true,
-    "jsx": "react-jsx",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  },
-  "include": ["**/*.js", "**/*.jsx"],
-  "exclude": ["node_modules"]
-}
+// {
+//   "compilerOptions": {
+//     "allowJs": true,
+//     "jsx": "react-jsx",
+//     "module": "esnext",
+//     "moduleResolution": "node",
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["./*"]
+//     }
+//   },
+//   "include": ["**/*.js", "**/*.jsx"],
+//   "exclude": ["node_modules"]
+// }
