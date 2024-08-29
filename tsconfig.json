@@ -1,21 +1,35 @@
 {
-    "compilerOptions": {
-      "allowJs": true,
-      "jsx": "react-jsx",
-      "module": "esnext",
-      "moduleResolution": "node",
-      "baseUrl": ".",
-      "paths": {
-        "@/*": ["./*"]
-      }
+  "compilerOptions": {
+    "allowJs": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
     },
-    "include": [
-      "**/*.js",
-      "**/*.jsx"
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
     ],
-    "exclude": [
-      "node_modules",
-      "pages/api/hello.js"  // Exclude this specific file if it's no longer needed
-    ]
-  }
-  
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "**/*.js",
+    "**/*.jsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "pages/api/hello.js", // Exclude this specific file if it's no longer needed
+    "pages/andrew/id.jsx"
+  ]
+}
