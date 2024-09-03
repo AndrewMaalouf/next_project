@@ -5,9 +5,8 @@ const Navbar = () => {
     return (
         <nav>
             <div className="logo">
-                <Image src="/logo.svg" alt="logo" width={128} height={77}/>
+              <Link href="/"><Image src="/logo.svg" alt="logo" width={128} height={77}/></Link>
             </div>
-            <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/andrew">Ninja Listing</Link>
         </nav>
