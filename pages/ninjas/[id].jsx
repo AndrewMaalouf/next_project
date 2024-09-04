@@ -87,16 +87,21 @@ export const getStaticProps = async (context) => {
 const Details = ({ ninja }) => {
 
   const imgRef = useRef(null);
+  const btnAnimation = useRef(null);
 
   useEffect(() => {
-    gsap.fromTo(imgRef.current.children, { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1, stagger: 0.5 });
+    gsap.fromTo(imgRef.current.children, { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1, stagger: 0.1 });
+
+    gsap.fromTo(btnAnimation.current, { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.8, ease: "power1.out" }
+    );    
+
     }, []);
+    
 
   return (
     <>
       <div ref={imgRef}>
         <img
-          // ref={imgRef}
           src="/ninja.png"
           alt="Ninja"
           width={100}
@@ -109,7 +114,7 @@ const Details = ({ ninja }) => {
           <div><p>{ninja.address.city}</p></div>
 
       </div>
-      <Link href="/ninjas" className={styles.btn}>Go Back</Link>
+      <Link href="/ninjas" className={styles.btn} ref={btnAnimation}>Go Back</Link>
     </>
   );
 }
