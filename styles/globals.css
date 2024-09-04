@@ -11,6 +11,7 @@ html, body {
 a {
   color: #333;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .content {
@@ -31,6 +32,13 @@ nav {
 
 nav a {
   margin-left: 12px;
+  position: relative;
+}
+
+nav a:hover {
+  color: #4979ff; 
+  transform: translateY(-1px);
+  transition: transform 0.3s ease-in-out;
 }
 
 nav .logo {

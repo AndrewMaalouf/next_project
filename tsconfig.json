@@ -30,6 +30,6 @@
   "exclude": [
     "node_modules",
     "pages/api/hello.js", // Exclude this specific file if it's no longer needed
-    "pages/andrew/id.jsx"
+    "pages/ninjas/id.jsx"
   ]
 }

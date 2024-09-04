@@ -16,3 +16,8 @@
   color: white;
   text-align: center;
 }
+.btn:hover{
+  background-color: #3354b2; 
+  transform: translateY(-2px);
+  transition: transform 0.4s ease-in-out;
+}
