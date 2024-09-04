@@ -89,8 +89,8 @@ const Details = ({ ninja }) => {
   const imgRef = useRef(null);
 
   useEffect(() => {
-    gsap.fromTo(imgRef.current, { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1 });
-  }, []);
+    gsap.fromTo(imgRef.current.children, { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1, stagger: 0.5 });
+    }, []);
 
   return (
     <>
@@ -102,12 +102,11 @@ const Details = ({ ninja }) => {
           width={100}
           height={100}
         />
-        <div >
-          <h1>{ninja.name}</h1>
-          <a href="#"><p>{ninja.email}</p></a>
-          <a href="#"><p>{ninja.website}</p></a>
-          <p>{ninja.address.city}</p>
-        </div>
+
+          <div><h1>{ninja.name}</h1></div>
+          <div><a href="#"><p>{ninja.email}</p></a></div>
+          <div><a href="#"><p>{ninja.website}</p></a></div>
+          <div><p>{ninja.address.city}</p></div>
 
       </div>
       <Link href="/ninjas" className={styles.btn}>Go Back</Link>
